@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Anna Musiał">
+    <!-- AJAX Script -->
+    <script src="./countryInfo.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Country Information</title>
+  </head>
+  <body>
+<h1>Information about Countries</h1>
+<!-- Search Hero Section -->
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <!-- Dropdown list of countries -->
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputGroupSelect01">Country</label>
+                    <select class="form-select" id="chooseTheCountry" onchange="chooseTheCountry()">
+                      <option selected disabled>Choose...</option>
+                      <!-- <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option> -->
+                    </select>
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Country details section -->
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <img src="./img/lucas-george-wendt-IYm2PCy0f8c-unsplash.jpg" class="card-img-top mx-auto" alt="flag" id="flag" style="width: 40%;">
+                    <div class="card-body">
+                        <h5 class="card-title" id="name">What a country!</h5>
+                    </div>
+                    <div class="mx-3">
+                        <table class="table table-bordered table-responsive">                        
+                            <tbody>
+                              <tr>
+                                <td>Capital city</td>
+                                <td id="capital">What a city!</td>
+                              </tr>
+                              <tr>
+                                <td>Language</td>
+                                <td id="language">language</td>
+                              </tr>
+                              <tr>
+                                <td>Area (m<sup>2</sup>)</td>
+                                <td id="area">square kilometres</td>
+                              </tr>
+                              <tr>
+                                <td>Population</td>
+                                <td id="population">citizens</td>
+                              </tr>
+                              <tr>
+                                <td>Currency</td>
+                                <td id="currency">money</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  </body>
+</html>
